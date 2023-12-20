@@ -177,7 +177,7 @@ where **name_of_the_combinatorial_object** is one of the following names of obje
 ### Instruction on how to reproduce the tables of the evaluation of the contribution of Boolean-arithmetic equations to learn sharp bounds
 
 >To reproduce the test performed in **Section 8.2** perform the following steps :
->1.  First, to avoid an overwriting in the following steps, make sure to duplicate the **/data/** directory which already exists in the archive and contains the data tables of for the lower and upper bounds of each combinatorial object of the Bound Seeker.
+>1.  First, to avoid an overwriting in the following steps, make sure to duplicate the **/data/** directory which already exists in the archive and contains the data tables for the lower and upper bounds of each combinatorial object of the Bound Seeker.
 >2.  After generating the conjectures files (First launch of the Bound Seeker) using the model acquiring only polynomials or conditionals  (i.e. the **Model 1**), change the name of the directory **/data/** by the name **/data_test_1_poly_cond/**.
 >3.  Then change the name of the copy of the duplicated **/data/** directory by the original name **/data/** for the second launch of the Bound Seeker.
 >4.  In the same way, after generating the conjectures files (Second launch of the Bound Seeker) using the full version of the model which includes all the contributions of **Sections 4, 5, 6**, and **7** (i.e. **Model 2**) , change the name of the directory **/data/** by the name **/data_test_1_tous/**.
