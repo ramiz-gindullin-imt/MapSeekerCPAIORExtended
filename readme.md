@@ -1,4 +1,21 @@
 ---------------------------------------------------------------------------------
+## Instruction on how to generate the dictionary of anti-rewriting rules
+
+>To generate the anti-rewriting rules of Section 6 anew perform these steps:
+>1. In the file `constraint_check.pl` delete or disable the lines:
+    `:- use_module(found_condpairs_family1_symf3).`
+    `:- use_module(found_condpairs_family2_symf3).`
+>2. Run SICStus Prolog from the terminal (version 4.6.0 or a more recent version) to generate anti-rewriting rules of Families 1 and 2:
+    `| ?- [constraint_check.pl], top, halt.`
+>It will take several hours to perform.
+>3. In the file `constraint_check.pl` restore the lines:
+    `:- use_module(found_condpairs_family1_symf3).`
+    `:- use_module(found_condpairs_family2_symf3).`
+>4. Run SICStus Prolog from the terminal (version 4.6.0 or a more recent version) to generate anti-rewriting rules of Families 1 and 2:
+    `| ?- [constraint_check.pl], top(3), halt.`
+>It will take several days to generate the rules.
+
+
 
 ## Data generation  
   
@@ -92,7 +109,7 @@ the constant `26` by `30`, `30`,`30` and `30`.
 > Then you copy those directories **forest, forest0, tree** in the **data** directory of the bound seeker.
 
 
-### Instruction on how to reproduce the experiments executed on the clusters of  Digital Research Alliance of Canada to learn sharp bounds using Model 1 and Model 2
+## Instruction on how to reproduce the experiments executed on the clusters of  Digital Research Alliance of Canada to learn sharp bounds using Model 1 and Model 2
 
 
 
@@ -174,7 +191,7 @@ where **name_of_the_combinatorial_object** is one of the following names of obje
 
 
 
-### Instruction on how to reproduce the tables of the evaluation of the contribution of Boolean-arithmetic equations to learn sharp bounds
+## Instruction on how to reproduce the tables of the evaluation of the contribution of Boolean-arithmetic equations to learn sharp bounds
 
 >To reproduce the test performed in **Section 8.2** perform the following steps :
 >1.  First, to avoid an overwriting in the following steps, make sure to duplicate the **/data/** directory which already exists in the archive and contains the data tables for the lower and upper bounds of each combinatorial object of the Bound Seeker.
@@ -189,7 +206,7 @@ where **name_of_the_combinatorial_object** is one of the following names of obje
 >8. Run SICStus Prolog from the terminal (version 4.6.0 or a more recent version) with the following command to print in the console the **Table 12**:  
 `| ?− [contribution_test_script], top(cases), halt.`
 
-### Instruction on how to reproduce the performance test of the acquisition of Boolean-arithmetic equations
+## Instruction on how to reproduce the performance test of the acquisition of Boolean-arithmetic equations
 
 To reproduce the test performed in Section 8.3 perform the following steps:
 
